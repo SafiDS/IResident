@@ -1,5 +1,6 @@
 const Routes = {
-    Splash:'Splash'
+    Splash:'Splash',
+    Intro:'Intro'
 }
 
 export default Routes

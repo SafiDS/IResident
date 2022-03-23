@@ -51,6 +51,7 @@ export default {
   fontMedium: APP_FONTS.ARABOTO_MEDIUM,
   fontExtraBold: APP_FONTS.ARABOTO_BLACK,
   fontThin: APP_FONTS.ARABOTO_THIN,
+  width,
   height,
   isPhone: !isTablet(),
   isTab: isTablet(),
