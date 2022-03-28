@@ -1,6 +1,7 @@
 const Routes = {
-    Splash:'Splash',
-    Intro:'Intro'
-}
+  Splash: "Splash",
+  Intro: "Intro",
+  LoginRegister: "LoginRegister",
+};
 
-export default Routes
+export default Routes;

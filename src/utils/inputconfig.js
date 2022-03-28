@@ -1,50 +1,63 @@
-import { String } from "./string";
+import string, { String } from "./string";
 
 const InputConfig = {
-    // SignUpInput: [
-    //     {
-    //         PlaceHolder: String.First_Name,
-    //         KeyboardType: 'default',
-    //         ReturnKeyType: 'next',
-    //         AutoCapitalize: 'words'
-    //     },
-    //     {
-    //         PlaceHolder: String.Last_Name,
-    //         KeyboardType: 'default',
-    //         ReturnKeyType: 'next',
-    //         AutoCapitalize: 'words'
-    //     },
-    //     {
-    //         PlaceHolder: String.Email,
-    //         KeyboardType: 'email-address',
-    //         ReturnKeyType: 'next',
-    //         AutoCapitalize: 'none', //words 
-    //     },
-    //     {
-    //         PlaceHolder: String.Password,
-    //         SecureTextEntry: true,
-    //         KeyboardType: 'default',
-    //         ReturnKeyType: 'next',
-    //         AutoCapitalize: 'none',
-    //         Length: 20
-    //     },
-
-    // ],
-    SignInInput: [
-        {
-            PlaceHolder: String.Placeholder_Email,
-            KeyboardType: 'email-address',
-            ReturnKeyType: 'next',
-            AutoCapitalize: 'none', //words 
-        },
-        {
-            PlaceHolder: String.PlaceHolder_Password,
-            SecureTextEntry: true,
-            KeyboardType: 'default',
-            ReturnKeyType: 'done',
-            AutoCapitalize: 'none',
-            Length: 20
-        }
-    ]
+  SignUpInput: [
+    {
+      PlaceHolder: string.name,
+      KeyboardType: "default",
+      ReturnKeyType: "next",
+      AutoCapitalize: "words",
+    },
+    {
+      PlaceHolder: string.first_name,
+      KeyboardType: "default",
+      ReturnKeyType: "next",
+      AutoCapitalize: "words",
+    },
+    {
+      PlaceHolder: string.last_name,
+      KeyboardType: "default",
+      ReturnKeyType: "next",
+      AutoCapitalize: "words",
+    },
+    {
+      PlaceHolder: string.email,
+      KeyboardType: "email-address",
+      ReturnKeyType: "next",
+      AutoCapitalize: "none", //words
+    },
+    {
+      PlaceHolder: string.password,
+      SecureTextEntry: true,
+      KeyboardType: "default",
+      ReturnKeyType: "next",
+      AutoCapitalize: "none",
+      Length: 20,
+    },
+    {
+      PlaceHolder: string.repeat_password,
+      SecureTextEntry: true,
+      KeyboardType: "default",
+      ReturnKeyType: "done",
+      AutoCapitalize: "none",
+      Length: 20,
+    },
+  ],
+  SignInInput: [
+    {
+      PlaceHolder: string.email,
+      KeyboardType: "email-address",
+      ReturnKeyType: "next",
+      AutoCapitalize: "none", //words
+    },
+    {
+      PlaceHolder: string.password,
+      SecureTextEntry: true,
+      KeyboardType: "default",
+      ReturnKeyType: "done",
+      AutoCapitalize: "none",
+      Length: 20,
+    },
+  ],
 };
 export default InputConfig;
