@@ -16,6 +16,16 @@ const string = {
   last_name: "Apellido paterno",
   register: "Registrar",
   repeat_password: "Repetir contraseña",
+  you_are_not_part_of_iresident: "Aún no eres parte de un grupo \niResident.",
+  enter_the_code: "Ingresa el código de tu complejo",
+  join_me: "Unirme",
+  surveillance: "Vigilancias",
+  regulation: "Reglamento",
+  guests: "Invitados",
+  mailbox: "Buzón",
+  notification: "Notificaciones",
+  addressheader1: "Frontemare",
+  addressheader2: "Conjunto residencial",
 };
 
 export default string;

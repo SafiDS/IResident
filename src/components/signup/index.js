@@ -7,8 +7,9 @@ import InputConfig from "../../utils/inputconfig";
 import color from "../../utils/color";
 import { Type_Of_SignUp } from "../../utils/enum";
 import Button from "../button";
+import Routes from "../../router/routes";
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
   const [tiEmail, setTiEmail] = useState("");
   const [tiPassword, setTiPassword] = useState("");
   const [tiRepeatPassword, setTiRepeatPassword] = useState("");
@@ -56,7 +57,7 @@ const SignUp = () => {
   };
 
   const handleRegisterButton = () => {
-    alert("In Development");
+    navigation.navigate(Routes.OtpVerify);
   };
   return (
     <ScrollView

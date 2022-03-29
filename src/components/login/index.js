@@ -8,8 +8,9 @@ import InputConfig from "../../utils/inputconfig";
 import { TextInput } from "react-native-paper";
 import { Type_Of_SignIn } from "../../utils/enum";
 import Button from "../button";
+import Routes from "../../router/routes";
 
-const LogIn = () => {
+const LogIn = ({ navigation }) => {
   const [tiEmail, setTiEmail] = useState("");
   const [tiPassword, setTiPassword] = useState("");
   const [isConditionAgree, setIsConditionAgree] = useState("");
@@ -36,7 +37,7 @@ const LogIn = () => {
     setIsConditionAgree(!isConditionAgree);
   };
   const handleGetIntoButton = () => {
-    alert(string.in_development);
+    navigation.navigate(Routes.OtpVerify);
   };
   return (
     <ScrollView

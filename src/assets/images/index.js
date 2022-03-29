@@ -4,6 +4,11 @@ const AppImages = {
   ic_grey_logo: require("./ic_grey_logo.png"),
   ic_login_logo: require("./ic_login_logo.png"),
   ic_white_check: require("./ic_white_check.png"),
+  ic_surveillance: require("./ic_surveillance.png"),
+  ic_regulation: require("./ic_regulation.png"),
+  ic_notification: require("./ic_notification.png"),
+  ic_guests: require("./ic_guests.png"),
+  ic_mailbox: require("./ic_mailbox.png"),
 };
 
 export default AppImages;
