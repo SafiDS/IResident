@@ -4,6 +4,7 @@ const Routes = {
   LoginRegister: "LoginRegister",
   OtpVerify: "OtpVerify",
   Dashboard: "Dashboard",
+  MyGuests: "MyGuests",
 };
 
 export default Routes;

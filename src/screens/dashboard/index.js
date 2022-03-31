@@ -6,8 +6,9 @@ import styles from "./styles";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import color from "../../utils/color";
 import string from "../../utils/string";
+import Routes from "../../router/routes";
 
-const DashboardScreen = () => {
+const DashboardScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.sacontainer}>
       <View style={styles.vprofilecontainer}>
@@ -40,7 +41,14 @@ const DashboardScreen = () => {
             <View style={styles.vrowcontainer}>
               {rowItem.map((item, index) => {
                 return (
-                  <Pressable style={styles.vtabcontainer}>
+                  <Pressable
+                    style={styles.vtabcontainer}
+                    onPress={() =>
+                      item.navigator
+                        ? navigation.navigate(item.navigator)
+                        : alert("In Development")
+                    }
+                  >
                     <Image style={styles.icon} source={item.icon} />
                     <Text style={styles.title}>{item.title}</Text>
                   </Pressable>

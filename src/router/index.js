@@ -8,6 +8,7 @@ import IntroScreen from "../screens/auth/intro";
 import LoginRegisterScreen from "../screens/auth/loginregister";
 import OtpVerifyScreen from "../screens/auth/otpverify";
 import DashboardScreen from "../screens/dashboard";
+import MyGuestsScreen from "../screens/myguests";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ function AppNavigator() {
         />
         <Stack.Screen name={Routes.OtpVerify} component={OtpVerifyScreen} />
         <Stack.Screen name={Routes.Dashboard} component={DashboardScreen} />
+        <Stack.Screen name={Routes.MyGuests} component={MyGuestsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,4 +1,5 @@
 import AppImages from "../assets/images";
+import Routes from "../router/routes";
 import string from "./string";
 
 export const constant = {
@@ -25,6 +26,7 @@ export const dashboardList = [
     {
       title: string.guests,
       icon: AppImages.ic_guests,
+      navigator:Routes.MyGuests
     },
     {
       title: string.mailbox,
