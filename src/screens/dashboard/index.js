@@ -6,11 +6,17 @@ import styles from "./styles";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import color from "../../utils/color";
 import string from "../../utils/string";
-import Routes from "../../router/routes";
+import CommonToolbar from "../../components/commontoolbar";
 
 const DashboardScreen = ({ navigation }) => {
+  const handleBackClick = () => {};
   return (
     <SafeAreaView style={styles.sacontainer}>
+      <CommonToolbar
+        leftIcon={"menu"}
+        title={string.myguest}
+        onBackClick={handleBackClick}
+      />
       <View style={styles.vprofilecontainer}>
         <View style={styles.vprofileheadercontainer}>
           <View style={styles.vaddresscontainer}>

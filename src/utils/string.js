@@ -26,6 +26,23 @@ const string = {
   notification: "Notificaciones",
   addressheader1: "Frontemare",
   addressheader2: "Conjunto residencial",
+  to_come: "Por llegar",
+  not_authorized: " No autorizado",
+  defeated: "Vencido",
+  in_place: "En sitio",
+  delete: "Eliminar",
+  share: "Compartir",
+  myguest: "Mis invitados",
+  newguest: "Nuevo invitado",
+  ownvehical: "Vehiculo propio",
+  taxiorother: "Taxi u otro",
+  formofincome: "Forma de ingreso",
+  registration: "Matricula",
+  guestcompanies: "Numero de acompañantes del \ninvitado",
+  upto4company: "Hasta 4 \nacompañantes",
+  morethan4company: "Más de 4 acompañantes",
+  admissiondate:"Fecha de ingreso",
+  daystostay:"Días de estancia"
 };
 
 export default string;

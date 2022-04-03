@@ -5,6 +5,7 @@ const Routes = {
   OtpVerify: "OtpVerify",
   Dashboard: "Dashboard",
   MyGuests: "MyGuests",
+  AddGuest: "AddGuest",
 };
 
 export default Routes;

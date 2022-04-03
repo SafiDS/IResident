@@ -1,5 +1,6 @@
 import AppImages from "../assets/images";
 import Routes from "../router/routes";
+import { Guest_Status, Transition_Mode } from "./enum";
 import string from "./string";
 
 export const constant = {
@@ -26,7 +27,7 @@ export const dashboardList = [
     {
       title: string.guests,
       icon: AppImages.ic_guests,
-      navigator:Routes.MyGuests
+      navigator: Routes.MyGuests,
     },
     {
       title: string.mailbox,
@@ -39,4 +40,66 @@ export const dashboardList = [
       icon: AppImages.ic_notification,
     },
   ],
+];
+
+export const incomeTypeList = [
+  {
+    title: string.ownvehical,
+    icon: "directions-car",
+  },
+  {
+    title: string.taxiorother,
+    icon: "transfer-within-a-station",
+  },
+];
+
+export const guestCompaniesList = [
+  {
+    title: string.upto4company,
+    icon: "people-outline",
+  },
+  {
+    title: string.morethan4company,
+    icon: "people-outline",
+  },
+];
+
+export const myGuestsList = [
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Car,
+    status: Guest_Status.Come,
+  },
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Walk,
+    status: Guest_Status.NotAuthorized,
+  },
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Walk,
+    status: Guest_Status.NotAuthorized,
+  },
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Car,
+    status: Guest_Status.Defeated,
+  },
+
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Car,
+    status: Guest_Status.InPlace,
+  },
+  {
+    title: "Francisco Lopez Gimenez",
+    date: "Jue 18 de marzo 2020",
+    transitionType: Transition_Mode.Car,
+    status: Guest_Status.Come,
+  },
 ];
