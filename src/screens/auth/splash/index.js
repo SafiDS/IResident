@@ -12,7 +12,6 @@ const SplashScreen = ({ navigation }) => {
     setTimeout(()=>{
       navigation.replace(Routes.Intro)
     },3000)
-    
   }
   return (
     <View style={styles.container}>
