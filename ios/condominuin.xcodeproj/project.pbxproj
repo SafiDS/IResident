@@ -17,7 +17,6 @@
 		A1E5E0FA27EA4AB900386C54 /* Araboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1E5E0F427EA4AB900386C54 /* Araboto-Black.ttf */; };
 		A1E5E0FB27EA4AB900386C54 /* Araboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1E5E0F527EA4AB900386C54 /* Araboto-Bold.ttf */; };
 		A1E5E0FC27EA4AB900386C54 /* Araboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1E5E0F627EA4AB900386C54 /* Araboto-Medium.ttf */; };
-		A1E5E0FD27EA4AB900386C54 /* Araboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1E5E0F727EA4AB900386C54 /* Araboto-Thin.ttf */; };
 		A1E5E0FE27EA4AB900386C54 /* Araboto-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1E5E0F827EA4AB900386C54 /* Araboto-Normal.ttf */; };
 		F6D9840D4ED50386432BA2A4 /* libPods-condominuin-condominuinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6AB00E2FA2BF398DC41828 /* libPods-condominuin-condominuinTests.a */; };
 /* End PBXBuildFile section */
@@ -55,6 +54,9 @@
 		C8E0BE40DFFC8AC1D85F4FD4 /* libPods-condominuin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-condominuin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53BAF01693BA5DB2B6566F6 /* Pods-condominuin-condominuinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-condominuin-condominuinTests.debug.xcconfig"; path = "Target Support Files/Pods-condominuin-condominuinTests/Pods-condominuin-condominuinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B3ACE604BCFA9F4F4FCA62 /* Pods-condominuin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-condominuin.debug.xcconfig"; path = "Target Support Files/Pods-condominuin/Pods-condominuin.debug.xcconfig"; sourceTree = "<group>"; };
+		E0B9E95727FB9FD40036E9DC /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		E0B9E95827FB9FD40036E9DC /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		E0B9E95927FB9FD40036E9DC /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,9 @@
 		A1E5E0F227EA4A7A00386C54 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E0B9E95727FB9FD40036E9DC /* EvilIcons.ttf */,
+				E0B9E95927FB9FD40036E9DC /* MaterialCommunityIcons.ttf */,
+				E0B9E95827FB9FD40036E9DC /* MaterialIcons.ttf */,
 				A1E5E0F427EA4AB900386C54 /* Araboto-Black.ttf */,
 				A1E5E0F527EA4AB900386C54 /* Araboto-Bold.ttf */,
 				A1E5E0F327EA4AB900386C54 /* Araboto-Light.ttf */,
@@ -273,7 +278,6 @@
 				A1E5E0F927EA4AB900386C54 /* Araboto-Light.ttf in Resources */,
 				A1E5E0FB27EA4AB900386C54 /* Araboto-Bold.ttf in Resources */,
 				A1E5E0FE27EA4AB900386C54 /* Araboto-Normal.ttf in Resources */,
-				A1E5E0FD27EA4AB900386C54 /* Araboto-Thin.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A1E5E0FA27EA4AB900386C54 /* Araboto-Black.ttf in Resources */,
 			);

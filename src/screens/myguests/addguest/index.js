@@ -10,6 +10,7 @@ import CommonToolbar from "../../../components/commontoolbar";
 import RadioContainer from "../../../components/radiocontainer";
 import { guestCompaniesList, incomeTypeList } from "../../../utils/const";
 import Button from "../../../components/button";
+import Routes from "../../../router/routes";
 
 const AddGuestScreen = ({ navigation }) => {
   const [tiName, setTiName] = useState("");
@@ -29,10 +30,10 @@ const AddGuestScreen = ({ navigation }) => {
   };
   const handleTextChange = (text) => {};
   const handleRegistrationBtn = () => {
-    alert("In Development");
+    navigation.navigate(Routes.GuestCode);
   };
   return (
-    <SafeAreaView style={styles.saContainer}>
+    <View style={styles.vContainer}>
       <CommonToolbar
         leftIcon={"arrow-back"}
         title={string.newguest}
@@ -121,7 +122,7 @@ const AddGuestScreen = ({ navigation }) => {
         title={string.register}
         onPress={handleRegistrationBtn}
       />
-    </SafeAreaView>
+    </View>
   );
 };
 

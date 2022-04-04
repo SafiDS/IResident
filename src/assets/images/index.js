@@ -9,6 +9,9 @@ const AppImages = {
   ic_notification: require("./ic_notification.png"),
   ic_guests: require("./ic_guests.png"),
   ic_mailbox: require("./ic_mailbox.png"),
+  bg_slider: require("./bg_slider.jpeg"),
+  ic_qr_code: require("./ic_qr_code.png"),
+  ic_note_pen: require("./ic_note_pen.png"),
 };
 
 export default AppImages;

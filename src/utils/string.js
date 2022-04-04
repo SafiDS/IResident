@@ -7,7 +7,7 @@ const string = {
   welcome_to: "Bienvendid@! a",
   sign_in_to_continue: "Inicia sesión para continuar.",
   remember_password: "Recordar usuario.",
-  get_into: "Get into",
+  get_into: "Ingresar",
   in_development: "In Development",
   i_forgot_password: "Olvide mi constraseña",
   complete_following_register: "Completa lo siguiente para \nregistrarte",
@@ -41,8 +41,18 @@ const string = {
   guestcompanies: "Numero de acompañantes del \ninvitado",
   upto4company: "Hasta 4 \nacompañantes",
   morethan4company: "Más de 4 acompañantes",
-  admissiondate:"Fecha de ingreso",
-  daystostay:"Días de estancia"
+  admissiondate: "Fecha de ingreso",
+  daystostay: "Días de estancia",
+  myprofile: "Mi perfil",
+  changeuser: "Cambiar usuario",
+  guestaccess: "Acceso a invitado",
+  allowentry: "Permitir ingreso",
+  denyentry: "Denegar ingreso",
+  scaninfo:
+    "Escanea el código del invitado para \nverificar el estado de su acceso",
+  checkcode: "Verificar código",
+  dateofstay: "Fecha de estancia",
+  dashboardguide: "[Dashboard guardia]",
 };
 
 export default string;

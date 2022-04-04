@@ -3,6 +3,12 @@ import color from "../../utils/color";
 import styleconfig from "../../utils/styleconfig";
 const styles = StyleSheet.create({
   saContainer: {
+    backgroundColor: color.primary,
+  },
+  blueColor: {
+    backgroundColor: color.lightblue,
+  },
+  vContainer: {
     flexDirection: "row",
     alignItems: "center",
     height: styleconfig.smartScale(55),
@@ -23,6 +29,9 @@ const styles = StyleSheet.create({
     fontSize: styleconfig.countPixelRatio(22),
     fontFamily: styleconfig.fontBold,
     color: color.whiteorange,
+  },
+  colorWhite: {
+    color: color.white,
   },
 });
 export default styles;

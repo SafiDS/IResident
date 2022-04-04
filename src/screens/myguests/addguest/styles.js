@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import styleconfig from "../../../utils/styleconfig";
 
 const styles = StyleSheet.create({
-  saContainer: {
+  vContainer: {
     flex: 1,
   },
   svContainer: {

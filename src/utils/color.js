@@ -16,6 +16,8 @@ const color = {
   lightorange: "#fab5a0",
   whiteorange: "#ffeae4",
   white52: "#7b7b7b",
+  yellow: "#ffb74c",
+  whiteblue: "#b1bfe7",
 };
 
 export default color;

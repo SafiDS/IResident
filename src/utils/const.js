@@ -10,6 +10,9 @@ export const constant = {
   email: "lucia.hernandez@gmail.com",
   location:
     "Av. 115 (Arco vial) casi esq. con Av. 28 de julio, Playa del Carmen, Q Roo, Mex.",
+  address: "OSCAR VICENTE AYESTARAN \nHERNANDEZ",
+  upto4companies: "Hasta 4 acompañantes",
+  date: "23-01-2021",
 };
 
 export const dashboardList = [
@@ -17,10 +20,12 @@ export const dashboardList = [
     {
       title: string.surveillance,
       icon: AppImages.ic_surveillance,
+      navigator: Routes.CheckCode,
     },
     {
       title: string.regulation,
       icon: AppImages.ic_regulation,
+      navigator: Routes.DashboardGuide,
     },
   ],
   [
@@ -41,7 +46,24 @@ export const dashboardList = [
     },
   ],
 ];
-
+export const dashboardGuideList = [
+  [
+    {
+      title: "Verificar invitados",
+      icon: AppImages.ic_qr_code,
+    },
+    {
+      title: "Informes",
+      icon: AppImages.ic_note_pen,
+    },
+  ],
+  [
+    {
+      title: "Recorridos",
+      icon: AppImages.ic_surveillance,
+    },
+  ],
+];
 export const incomeTypeList = [
   {
     title: string.ownvehical,
@@ -102,4 +124,42 @@ export const myGuestsList = [
     transitionType: Transition_Mode.Car,
     status: Guest_Status.Come,
   },
+];
+
+export const ProfileSliderList = [
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+  {
+    title: "Frontemare",
+    image: AppImages.bg_slider,
+  },
+];
+
+export const GuestAccessList = [
+  { title: "Nombre", detail: "OSCAR VICENTE AYESTARAN HERNAN" },
+  { title: "Medio de acceso", detail: "Automovil - RBH304B" },
+  { title: "Número de acompañantes", detail: "Hasta 4 acompañantes" },
+  { title: "Fecha de permanencia", detail: "23-01-2021" },
 ];

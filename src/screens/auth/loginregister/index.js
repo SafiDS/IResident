@@ -1,7 +1,7 @@
 import { Text } from "react-native";
 import React, { useRef, useState } from "react";
 import { TabView, TabBar } from "react-native-tab-view";
-import { SafeAreaView } from "react-native-safe-area-context";
+import SafeAreaView from "react-native-safe-area-view";
 import styles from "./styles";
 import string from "../../../utils/string";
 import SignUp from "../../../components/signup";

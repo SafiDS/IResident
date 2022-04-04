@@ -1,6 +1,6 @@
 import { ScrollView, View, Image, Text } from "react-native";
 import React, { useState } from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
+import SafeAreaView from "react-native-safe-area-view";
 import styles from "./styles";
 import { constant } from "../../../utils/const";
 import string from "../../../utils/string";

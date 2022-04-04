@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     backgroundColor: color.white,
     paddingVertical: styleconfig.smartScale(5),
   },
-  vprofileheadercontainer: {
+  pProfileheadercontainer: {
     marginHorizontal: styleconfig.smartWidthScale(10),
     flexDirection: "row",
     alignItems: "center",
@@ -38,10 +38,11 @@ const styles = StyleSheet.create({
   addressheader1: {
     fontSize: styleconfig.countPixelRatio(32),
     color: color.primary,
+    marginTop: styleconfig.smartScale(10),
     fontFamily: styleconfig.fontBold,
   },
   addressheader2: {
-    marginTop: -styleconfig.smartScale(5),
+    marginTop: styleconfig.smartScale(5),
     color: color.lightblack,
     fontSize: styleconfig.countPixelRatio(18),
     fontFamily: styleconfig.fontNormal,
@@ -49,12 +50,13 @@ const styles = StyleSheet.create({
 
   tlocation: {
     flex: 1,
+    color: color.lightblack,
     fontFamily: styleconfig.fontNormal,
     fontSize: styleconfig.countPixelRatio(17),
     marginHorizontal: styleconfig.smartWidthScale(10),
   },
 
-  sacontainer: {
+  vcontainer: {
     flex: 1,
     backgroundColor: color.lightwhite,
   },

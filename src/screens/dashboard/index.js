@@ -1,24 +1,31 @@
 import { View, Pressable, Image, Text } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
+
 import { constant, dashboardList } from "../../utils/const";
 import styles from "./styles";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import color from "../../utils/color";
 import string from "../../utils/string";
 import CommonToolbar from "../../components/commontoolbar";
+import Routes from "../../router/routes";
 
 const DashboardScreen = ({ navigation }) => {
   const handleBackClick = () => {};
+  const handleProfileClick = () => {
+    navigation.navigate(Routes.Profile);
+  };
   return (
-    <SafeAreaView style={styles.sacontainer}>
+    <View style={styles.vcontainer}>
       <CommonToolbar
         leftIcon={"menu"}
         title={string.myguest}
         onBackClick={handleBackClick}
       />
       <View style={styles.vprofilecontainer}>
-        <View style={styles.vprofileheadercontainer}>
+        <Pressable
+          style={styles.pProfileheadercontainer}
+          onPress={handleProfileClick}
+        >
           <View style={styles.vaddresscontainer}>
             <Text style={styles.addressheader1}>{string.addressheader1}</Text>
             <Text style={styles.addressheader2}>{string.addressheader2}</Text>
@@ -27,7 +34,7 @@ const DashboardScreen = ({ navigation }) => {
             source={{ uri: constant.profileimage }}
             style={styles.iprofile}
           />
-        </View>
+        </Pressable>
         <View style={styles.vlocationcontainer}>
           <Icon name="location-on" size={30} color={color.lightblack} />
           <Text style={styles.tlocation} numberOfLines={2}>
@@ -64,7 +71,7 @@ const DashboardScreen = ({ navigation }) => {
           );
         })}
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

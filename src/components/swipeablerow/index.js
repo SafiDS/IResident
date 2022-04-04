@@ -45,7 +45,7 @@ const SwipeableRow = ({ children }) => {
     <Swipeable
       ref={swipeable}
       friction={2}
-      enableTrackpadTwoFingerGesture
+      // enableTrackpadTwoFingerGesture
       rightThreshold={40}
       containerStyle={styles.swipeContainer}
       renderRightActions={renderRightActions}
