@@ -9,7 +9,6 @@ const color = {
   lightwhite: "#f8f8ff",
   lightgreen: "#32c294",
   darkpink: "#c13270",
-  darkgrey: "#adadad",
   skyblue: "#31b4e4",
   lightgrey: "#b7b6b6",
   lightblue: "#565674",
