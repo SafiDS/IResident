@@ -1,18 +1,26 @@
 import { View, ScrollView, Pressable, Text, Image } from "react-native";
 import React from "react";
 import styles from "./styles";
-import CommonToolbar from "../../../components/commontoolbar";
+import {CommonActions} from '@react-navigation/native';
 import string from "../../../utils/string";
 import { constant, ProfileSliderList } from "../../../utils/const";
 import ItemSlider from "../../../components/itemslider";
 import Carousel from "react-native-snap-carousel";
 import { itemWidth, sliderWidth } from "../../../components/itemslider/styles";
+import Routes from "../../../router/routes";
 
 const SLIDER_1_FIRST_ITEM = 1;
 const ProfileScreen = ({ navigation }) => {
-  const handleBackClick = () => {
-    navigation.goBack();
+
+  const handleGetInto = () => {
+    navigation.dispatch(
+        CommonActions.reset({
+          index: 0,
+          routes: [{name: Routes.Dashboard}],
+        }),
+    );
   };
+
   const _renderItemWithParallax = ({ item, index }, parallaxProps) => {
     return (
       <ItemSlider
@@ -25,11 +33,11 @@ const ProfileScreen = ({ navigation }) => {
   };
   return (
     <View style={styles.vContainer}>
-      <CommonToolbar
+      {/*<CommonToolbar
         leftIcon={"arrow-back"}
         title={string.myprofile}
         onBackClick={handleBackClick}
-      />
+      />*/}
       <ScrollView
         showsVerticalScrollIndicator={false}
         overScrollMode="never"
@@ -52,7 +60,7 @@ const ProfileScreen = ({ navigation }) => {
             contentContainerCustomStyle={styles.sliderContentContainer}
           />
         </View>
-        <Pressable style={styles.pGetInto}>
+        <Pressable style={styles.pGetInto} onPress={handleGetInto}>
           <Text style={styles.tGetInto}>{string.get_into}</Text>
         </Pressable>
         <Text style={styles.tChangeUser}>{string.changeuser}</Text>

@@ -17,7 +17,8 @@ const OtpVerifyScreen = ({ navigation }) => {
   };
 
   const handleJoinMeButton = () => {
-    navigation.navigate(Routes.Dashboard);
+    navigation.navigate(Routes.Profile)
+    //navigation.navigate(Routes.Dashboard);
   };
   return (
     <SafeAreaView style={styles.sacontainer}>

@@ -12,7 +12,7 @@ import Routes from "../../router/routes";
 const DashboardScreen = ({ navigation }) => {
   const handleBackClick = () => {};
   const handleProfileClick = () => {
-    navigation.navigate(Routes.Profile);
+    //navigation.navigate(Routes.Profile);
   };
   return (
     <View style={styles.vcontainer}>
